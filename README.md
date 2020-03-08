@@ -8,9 +8,9 @@ TestNet4 will be used in default and default branch. Both Q and M addresses are 
 1. Install PostgreSQL and Java 8.
 2. Create a new role. user name is "wallet", password is "password". Set the privileges to yes for all.
 3. Create a new DB, name is "ltcWallet", set the owner to the newly created role.
-4. Run btc-wallet-1.0.0-SNAPSHOT.jar by using "java -jar ltc-wallet-1.0.0-SNAPSHOT.jar", If you want to run it on LTC mainnet, please use prod profile.
+4. Run ltc-wallet-1.0.0-SNAPSHOT.jar by using "java -jar ltc-wallet-1.0.0-SNAPSHOT.jar", If you want to run it on LTC mainnet, please use prod profile.
 5. Copy the checkpoint file in etc folder to <user_home> folder if you want to accelarate the blockchain download speed.
-6. When you see "All blocks have been downloaded. BTC wallet service is available." in your log, you system has started. It takes less than one minute if you use checkpoint. hours if not.
+6. When you see "All blocks have been downloaded. LTC wallet service is available." in your log, you system has started. It takes less than one minute if you use checkpoint. hours if not.
 
 Note: If you have problem about ltc-core.jar in the pom, please add it to your maven repo manually.
 

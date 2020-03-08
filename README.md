@@ -2,7 +2,7 @@
 Spring Boot based 2-of-3 multisig wallet implementation for LTC. If you find any problem, please open an issue.
 
 ## Testnet
-TestNet4 will be used in default and default branch. Both Q and M addresses are supported.
+TestNet4 will be used in default and dev branch. Both Q and M addresses are supported.
 
 ## Setup Development Environment
 1. Install PostgreSQL and Java 8.

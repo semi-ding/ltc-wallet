@@ -10,7 +10,7 @@ server:
 application:
   passphrase: ${PASSPHRASE}
   service-id: ${SERVICEID}
-  dns-seeds: seed.bitcoin.sipa.be, dnsseed.bluematt.me, dnsseed.bitcoin.dashjr.org, seed.bitcoinstats.com, seed.bitcoin.jonasschnelli.ch
+  dns-seeds: seed-a.litecoin.loshan.co.uk, dnsseed.thrasher.io, dnsseed.litecointools.com, dnsseed.litecoinpool.org, dnsseed.koin-project.com
   network: mainnet
   fast-catchup-time: 2019-12-13 11:00:00
   deposit-confirmation-number: 2

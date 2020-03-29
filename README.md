@@ -16,7 +16,7 @@ If you want a stable test environment, **set up your own node**, LitecoinJ lib w
 5. Copy the checkpoint file in etc folder to <user_home> folder if you want to accelarate the blockchain download speed.
 6. When you see "All blocks have been downloaded. LTC wallet service is available." in your log, you system has started. It takes less than one minute if you use checkpoint. hours if not.
 
-Note: If you have problem about ltc-core.jar in the pom, please add it to your maven repo manually.
+Note: If you have problem about ltc-core.jar in the pom, please add it to your maven repo manually. You can find jar file in etc folder.
 
 ## REST API 
 - **List all transactions:  GET** https://hostname:9300/api/v1/ltc/wallet/{walletId}/transaction/all?pageId=0&size=100

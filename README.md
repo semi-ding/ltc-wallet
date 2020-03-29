@@ -4,6 +4,9 @@ Spring Boot based 2-of-3 multisig wallet implementation for LTC.  If you find an
 ## Testnet
 TestNet4 will be used in default and dev branch. Both Q and M addresses are supported.
 
+If you want a stable test environment, **set up your own node**, LitecoinJ lib will automatically connect to localhost first.
+
+**TestNet4Params.java** is provided in etc folder. feel free to use it.
 
 ## Setup Development Environment
 1. Install PostgreSQL and Java 8.

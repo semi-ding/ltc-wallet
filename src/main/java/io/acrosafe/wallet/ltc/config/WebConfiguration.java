@@ -26,11 +26,13 @@ package io.acrosafe.wallet.ltc.config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
+import org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory;
 import org.springframework.boot.web.server.MimeMappings;
 import org.springframework.boot.web.server.WebServerFactory;
 import org.springframework.boot.web.server.WebServerFactoryCustomizer;
 import org.springframework.boot.web.servlet.ServletContextInitializer;
 import org.springframework.boot.web.servlet.server.ConfigurableServletWebServerFactory;
+import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
@@ -80,9 +82,9 @@ public class WebConfiguration implements ServletContextInitializer, WebServerFac
     }
 
     @Bean
-    public TomcatServletWebServerFactory tomcatServletWebServerFactory()
+    public UndertowServletWebServerFactory undertowServletWebServerFactory()
     {
-        TomcatServletWebServerFactory tomcatContainer = new TomcatServletWebServerFactory();
-        return tomcatContainer;
+        UndertowServletWebServerFactory undertowContainer = new UndertowServletWebServerFactory();
+        return undertowContainer;
     }
 }

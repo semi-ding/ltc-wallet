@@ -1,5 +1,5 @@
 # ltc-wallet (V1 ready)
-Spring Boot based 2-of-3 multisig wallet implementation for LTC.  If you find any problem, please open an issue. or you can contact sam@acrosafe.io.
+Spring Boot based 2-of-3 multisig wallet and payment implementation for LTC. If you want to support the project, Please donate to the following LTC address: MDQsW5bb5KCxoxzHJGPN1GFt6VJJqFbGpQ
 
 ## Testnet
 TestNet4 will be used in default and dev branch. Both Q and M addresses are supported.

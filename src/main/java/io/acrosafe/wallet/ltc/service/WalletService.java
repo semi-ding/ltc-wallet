@@ -249,7 +249,7 @@ public class WalletService
 
     @Transactional
     public synchronized WalletRecord createWallet(String symbol, String label, Passphrase signingKeyPassphrase,
-            Passphrase backupSigningKeyPassphrase, Boolean enabled)
+            Passphrase backupSigningKeyPassphrase)
             throws ServiceNotReadyException, InvalidCoinSymbolException, InvalidPassphraseException, CryptoException
     {
         if (!isServiceReady)
@@ -270,11 +270,6 @@ public class WalletService
         if (backupSigningKeyPassphrase == null || StringUtils.isEmpty(backupSigningKeyPassphrase.getStringValue()))
         {
             throw new InvalidPassphraseException("backup signing key passphrase cannot be empty or null.");
-        }
-
-        if (enabled == null)
-        {
-            enabled = true;
         }
 
         Context.propagate(this.blockChainNetwork.getContext());
@@ -371,7 +366,7 @@ public class WalletService
         walletRecord.setOwnerSpec(encodedOwnerSpec);
         walletRecord.setOwnerSalt(encodedOwnerSalt);
         walletRecord.setCreatedDate(createdDate);
-        walletRecord.setEnabled(enabled);
+        walletRecord.setEnabled(true);
         walletRecord.setLabel(label);
         walletRecord.setSeedTimestamp(creationTimeInSeconds);
 

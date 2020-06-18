@@ -92,7 +92,7 @@ public class WalletResources
         try
         {
             WalletRecord record = this.service.createWallet(request.getSymbol(), request.getLabel(),
-                    request.getSigningKeyPassphrase(), request.getBackupSigningKeyPassphrase(), request.getEnabled());
+                    request.getSigningKeyPassphrase(), request.getBackupSigningKeyPassphrase());
             response.setCreatedDate(record.getCreatedDate());
             response.setEnabled(record.isEnabled());
             response.setId(record.getId());

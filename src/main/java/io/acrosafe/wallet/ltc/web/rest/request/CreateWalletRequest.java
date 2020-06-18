@@ -42,9 +42,6 @@ public class CreateWalletRequest
     @JsonProperty("backup_signing_key_passphrase")
     private Passphrase backupSigningKeyPassphrase;
 
-    @JsonProperty("enabled")
-    private Boolean enabled;
-
     public String getSymbol()
     {
         return symbol;
@@ -63,16 +60,6 @@ public class CreateWalletRequest
     public void setLabel(String label)
     {
         this.label = label;
-    }
-
-    public Boolean getEnabled()
-    {
-        return enabled;
-    }
-
-    public void setEnabled(Boolean enabled)
-    {
-        this.enabled = enabled;
     }
 
     public Passphrase getSigningKeyPassphrase()
